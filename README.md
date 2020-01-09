@@ -1,0 +1,1 @@
+# Boilerplate to start working Docker in LAMP
