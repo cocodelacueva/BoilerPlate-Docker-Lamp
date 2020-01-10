@@ -8,6 +8,8 @@ services:
       MYSQL_DATABASE: test_db
       MYSQL_USER: devuser
       MYSQL_PASSWORD: devpass
+    volumes:
+      - db:/var/lib/mysql
     ports:
       - "3304:3306"
   web:
@@ -21,3 +23,7 @@ services:
       - "8100:80"
     stdin_open: true
     tty: true
+
+volumes:
+  web:
+  db:
